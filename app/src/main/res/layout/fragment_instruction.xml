@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ (C) Copyright 2008 STYL Solutions Pte. Ltd. , All rights reserved
+  ~ This source code and any compilation or derivative thereof is the sole
+  ~ property of STYL Solutions Pte. Ltd. and is provided pursuant to a
+  ~ Software License Agreement.  This code is the proprietary information of
+  ~ STYL Solutions Pte. Ltd. and is confidential in nature. Its use and
+  ~ dissemination by any party other than STYL Solutions Pte. Ltd. is strictly
+  ~ limited by the confidential information provisions of the Agreement
+  ~ referenced above.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:id="@+id/frame_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.styl.phome.customview.CustomTextView
+            android:id="@+id/tvTitle"
+            style="@style/title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_p_home"
+            android:textColor="@color/green" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_back" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/iv_plugin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:layout_below="@id/frame_toolbar"
+        android:background="@color/green_light">
+
+        <ImageView
+            android:layout_width="@dimen/field_height"
+            android:layout_height="@dimen/field_height"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/ic_action" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_plugin"
+        style="@style/body_regular_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_plugin"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:paddingHorizontal="@dimen/text_padding_horizontal"
+        android:text="@string/instruction_text"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/bt_start_scan"
+        style="@style/button_long"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_long_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/button_margin_vertical"
+        android:layout_marginBottom="@dimen/button_align_bottom"
+        android:text="@string/start_to_scan" />
+
+</RelativeLayout>

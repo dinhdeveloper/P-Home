@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ (C) Copyright 2008 STYL Solutions Pte. Ltd. , All rights reserved
+  ~ This source code and any compilation or derivative thereof is the sole
+  ~ property of STYL Solutions Pte. Ltd. and is provided pursuant to a
+  ~ Software License Agreement.  This code is the proprietary information of
+  ~ STYL Solutions Pte. Ltd. and is confidential in nature. Its use and
+  ~ dissemination by any party other than STYL Solutions Pte. Ltd. is strictly
+  ~ limited by the confidential information provisions of the Agreement
+  ~ referenced above.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splash_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/linear_margin"
+            android:text="@string/registration_in_process"
+            android:textAlignment="center"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            style="@style/body_regular_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/guidance_text_margin_top"
+            android:layout_marginTop="@dimen/guidance_text_margin_top"
+            android:text="@string/please_notice_light"
+            android:textAlignment="center"
+            android:textColor="@color/text_color" />
+
+        <FrameLayout
+            android:layout_width="@dimen/planter_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/planter_margin_top"
+            android:layout_marginBottom="@dimen/planter_margin_bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/planter_height"
+                android:layout_gravity="center_horizontal"
+                android:paddingHorizontal="@dimen/planter_padding"
+                android:src="@drawable/empty_planter" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/planter_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/water_box_margin"
+                android:src="@drawable/water_holder" />
+
+            <ImageView
+                android:layout_width="@dimen/text_device_margin_top"
+                android:layout_height="@dimen/text_device_margin_top"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/water_box_padding_start"
+                android:layout_marginTop="@dimen/water_box_margin"
+                android:outlineSpotShadowColor="@color/green_shadow"
+                android:src="@drawable/planter_active_circle" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_wifi_set_up"
+        style="@style/button_small_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/button_padding_horizontal"
+        android:layout_marginTop="@dimen/text_device_margin_top"
+        android:text="@string/wifi_setup" />
+
+</LinearLayout>

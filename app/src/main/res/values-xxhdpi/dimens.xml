@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--login-->
+    <dimen name="sign_in_button_spacing">40dp</dimen>
+    <dimen name="sign_in_top_spacing">54dp</dimen>
+    <dimen name="sign_in_field_spacing">28dp</dimen>
+
+    <!--sign up-->
+    <dimen name="sign_up_top">40dp</dimen>
+    <dimen name="sign_up_button_spacing">32dp</dimen>
+    <dimen name="sign_up_button_bottom">28dp</dimen>
+    <dimen name="sign_up_field_spacing">12dp</dimen>
+    <dimen name="sign_up_bottom_spacing">46dp</dimen>
+    <!--splash-->
+    <dimen name="splash_top_spacing">180dp</dimen>
+    <dimen name="splash_bottom_spacing">94dp</dimen>
+    <dimen name="splash_content_spacing">35dp</dimen>
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ (C) Copyright 2008 STYL Solutions Pte. Ltd. , All rights reserved
+  ~ This source code and any compilation or derivative thereof is the sole
+  ~ property of STYL Solutions Pte. Ltd. and is provided pursuant to a
+  ~ Software License Agreement.  This code is the proprietary information of
+  ~ STYL Solutions Pte. Ltd. and is confidential in nature. Its use and
+  ~ dissemination by any party other than STYL Solutions Pte. Ltd. is strictly
+  ~ limited by the confidential information provisions of the Agreement
+  ~ referenced above.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.styl.phome.customview.CustomTextView
+            android:id="@+id/tvTitle"
+            style="@style/title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_p_home"
+            android:textColor="@color/green" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_back" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_1dp"
+        android:background="@color/light_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/guidance_text_margin_top"
+                android:text="@string/device_found"
+                android:textAlignment="center"
+                android:textColor="@color/text_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_device_margin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/circle_width"
+                    android:layout_height="@dimen/circle_width"
+                    android:layout_gravity="center"
+                    android:src="@drawable/green_circle" />
+
+                <TextView
+                    style="@style/title_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/circle_width"
+                    android:text="@string/device_hardcode"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/body_medium_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/guidance_text_margin_top"
+                android:text="@string/device_text"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/linear_margin"
+                android:layout_marginTop="@dimen/guidance_text_margin_top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/medium_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_wifi_name"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        style="@style/title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/input_padding_vertical"
+                        android:text="@string/start_dot"
+                        android:textAlignment="center"
+                        android:textColor="@color/red_start" />
+                </LinearLayout>
+
+                <EditText
+                    style="@style/title_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_long_height"
+                    android:layout_marginTop="@dimen/input_padding_vertical"
+                    android:background="@drawable/background_edittext"
+                    android:drawableEnd="@drawable/ic_wifi"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/input_wifi_padding_vertical"
+                    android:textSize="@dimen/edit_text_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/guidance_text_margin_top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/medium_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifi_password"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        style="@style/title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/input_padding_vertical"
+                        android:text="@string/start_dot"
+                        android:textAlignment="center"
+                        android:textColor="@color/red_start" />
+                </LinearLayout>
+
+                <EditText
+                    style="@style/title_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_long_height"
+                    android:layout_marginTop="@dimen/input_padding_vertical"
+                    android:background="@drawable/background_edittext"
+                    android:drawableEnd="@drawable/ic_visibility"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="@dimen/input_wifi_padding_vertical"
+                    android:textSize="@dimen/title_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/linear_margin"
+                android:layout_marginTop="@dimen/text_device_margin_top"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    style="@style/body_regular_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin"
+                    android:text="@string/note_text"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_connect"
+            style="@style/button_long"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_long_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/button_margin_vertical"
+            android:layout_marginBottom="@dimen/button_align_bottom"
+            android:text="@string/allow_to_connect" />
+    </RelativeLayout>
+</LinearLayout>

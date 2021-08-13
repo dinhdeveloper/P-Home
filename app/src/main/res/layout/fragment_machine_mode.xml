@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ (C) Copyright 2008 STYL Solutions Pte. Ltd. , All rights reserved
+  ~ This source code and any compilation or derivative thereof is the sole
+  ~ property of STYL Solutions Pte. Ltd. and is provided pursuant to a
+  ~ Software License Agreement.  This code is the proprietary information of
+  ~ STYL Solutions Pte. Ltd. and is confidential in nature. Its use and
+  ~ dissemination by any party other than STYL Solutions Pte. Ltd. is strictly
+  ~ limited by the confidential information provisions of the Agreement
+  ~ referenced above.
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="@dimen/planter_padding_double"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/harvest" />
+
+                    <Button
+                        style="@style/button_planter"
+                        android:layout_width="@dimen/button_short_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingVertical="@dimen/planter_padding"
+                        android:text="@string/planter_1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginHorizontal="@dimen/planter_padding_double"
+                        android:paddingHorizontal="@dimen/input_padding_horizontal">
+
+                        <TextView
+                            style="@style/body_bold_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/planter_name" />
+
+                        <TextView
+                            style="@style/body_regular_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/harvest_content"
+                            android:textSize="@dimen/little_text_size" />
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="@dimen/planter_padding_double"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/harvest" />
+
+                    <Button
+                        style="@style/button_planter"
+                        android:layout_width="@dimen/button_short_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingVertical="@dimen/planter_padding"
+                        android:text="@string/planter_1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:layout_marginHorizontal="@dimen/planter_padding_double"
+                        android:paddingHorizontal="@dimen/input_padding_horizontal">
+
+                        <TextView
+                            style="@style/body_bold_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/planter_name" />
+
+                        <TextView
+                            style="@style/body_regular_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/harvest_content"
+                            android:textSize="@dimen/little_text_size" />
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="@dimen/planter_padding_double"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/empty_planter" />
+
+                    <Button
+                        style="@style/button_planter"
+                        android:layout_width="@dimen/button_short_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingVertical="@dimen/planter_padding"
+                        android:text="@string/planter_2" />
+
+                    <Button
+                        style="@style/button_small_white"
+                        android:layout_width="@dimen/button_small_white_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:text="@string/add_crop" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="@dimen/planter_padding_double"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/empty_planter" />
+
+                    <Button
+                        style="@style/button_planter"
+                        android:layout_width="@dimen/button_short_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingVertical="@dimen/planter_padding"
+                        android:text="@string/planter_2" />
+
+                    <Button
+                        style="@style/button_small_white"
+                        android:layout_width="@dimen/button_small_white_width"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:text="@string/add_crop" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginHorizontal="@dimen/water_padding_horizontal"
+                        android:layout_marginTop="@dimen/water_box_margin_top">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/water_holder" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_vertical"
+                            android:layout_marginTop="@dimen/button_height">
+
+                            <TextView
+                                android:id="@+id/tv_time"
+                                style="@style/title_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/time_day"
+                                android:textSize="@dimen/icon_small_text_size" />
+
+                            <ImageView
+                                android:id="@+id/iv_temp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/planter_margin_top"
+                                android:layout_toEndOf="@id/tv_time"
+                                android:src="@drawable/ic_temp" />
+
+                            <ImageView
+                                android:id="@+id/iv_water"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_temp"
+                                android:layout_marginStart="@dimen/planter_margin_top"
+                                android:layout_marginTop="@dimen/button_dialog_vertical"
+                                android:layout_toEndOf="@id/tv_time"
+                                android:src="@drawable/ic_water_crop" />
+
+                            <TextView
+                                android:id="@+id/tv_temp"
+                                style="@style/title_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/water_padding_horizontal"
+                                android:layout_toEndOf="@id/iv_temp"
+                                android:text="@string/temp"
+                                android:textSize="@dimen/icon_small_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_water"
+                                style="@style/title_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_temp"
+                                android:layout_marginStart="@dimen/water_padding_horizontal"
+                                android:layout_marginTop="@dimen/button_dialog_vertical"
+                                android:layout_toEndOf="@id/iv_water"
+                                android:text="@string/water"
+                                android:textSize="@dimen/icon_small_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_temp_speed"
+                                style="@style/title_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/planter_margin_top"
+                                android:layout_toEndOf="@id/tv_temp"
+                                android:text="@string/temp"
+                                android:textSize="@dimen/icon_small_text_size" />
+
+                            <TextView
+                                android:id="@+id/tv_water_speed"
+                                style="@style/title_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_temp_speed"
+                                android:layout_marginStart="@dimen/planter_margin_top"
+                                android:layout_marginTop="@dimen/button_dialog_vertical"
+                                android:layout_toEndOf="@id/tv_water"
+                                android:text="@string/water"
+                                android:textSize="@dimen/icon_small_text_size" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

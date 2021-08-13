@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ (C) Copyright 2008 STYL Solutions Pte. Ltd. , All rights reserved
+  ~ This source code and any compilation or derivative thereof is the sole
+  ~ property of STYL Solutions Pte. Ltd. and is provided pursuant to a
+  ~ Software License Agreement.  This code is the proprietary information of
+  ~ STYL Solutions Pte. Ltd. and is confidential in nature. Its use and
+  ~ dissemination by any party other than STYL Solutions Pte. Ltd. is strictly
+  ~ limited by the confidential information provisions of the Agreement
+  ~ referenced above.
+  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/header_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.styl.phome.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:layout_marginBottom="16dp"
+            android:text="@string/welcome_title"
+            android:textColor="@color/green"
+            android:textSize="@dimen/title_text_size"
+            app:customFont="@string/koho_bold" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:focusable="true"
+            android:src="@drawable/ic_notification" />
+    </FrameLayout>
+
+    <com.styl.phome.customview.CustomTextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/small_spacing"
+        android:letterSpacing="0.1"
+        android:text="@string/welcome"
+        android:textColor="@color/green"
+        android:textSize="@dimen/title_text_size"
+        app:customFont="@string/koho_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frHeader" />
+
+    <com.styl.phome.customview.CustomTextView
+        android:id="@+id/tvAddPhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/add_phome_description"
+        android:textColor="@color/green"
+        android:textSize="@dimen/title_text_size"
+        app:customFont="@string/koho_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/welcome_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddPhome" />
+
+    <com.styl.phome.customview.CustomButton
+        android:id="@+id/btnAddPhome"
+        style="@style/GreenButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_horizontal_spacing"
+        android:layout_marginBottom="50dp"
+        android:enabled="true"
+        android:letterSpacing="0.16"
+        android:text="@string/add_first_phome"
+        android:textColor="@color/white"
+        android:textSize="@dimen/content_text_size"
+        app:customFont="@string/koho_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

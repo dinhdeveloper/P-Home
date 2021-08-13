@@ -1,0 +1,248 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="GreenButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/green_ripple_drawable</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/content_text_size</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <!--text style-->
+
+    <style name="headline">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="title_3">
+        <item name="android:textSize">@dimen/toolbar_title_size</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="title_1">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="title_2">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:fontFamily">@font/koho_medium</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="title_4">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="title_5">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:fontFamily">@font/koho_medium</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="large_title">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="large_body">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:fontFamily">@font/koho_medium</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="body_regular_16">
+        <item name="android:textSize">@dimen/content_text_size</item>
+        <item name="android:fontFamily">@font/koho_regular</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="body_medium_16">
+        <item name="android:textSize">@dimen/content_text_size</item>
+        <item name="android:fontFamily">@font/koho_medium</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="body_regular_14">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:fontFamily">@font/koho_regular</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="body_bold_13">
+        <item name="android:textSize">@dimen/little_text_size</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="medium_content">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:fontFamily">@font/koho_medium</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="sub_content">
+        <item name="android:textSize">@dimen/little_text_size</item>
+        <item name="android:fontFamily">@font/koho_regular</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="notification_content">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:fontFamily">@font/koho_regular</item>
+        <item name="android:textColor">@color/grey_color</item>
+    </style>
+
+    <!--button style-->
+
+    <style name="button_long" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/green_ripple_drawable</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textSize">@dimen/toolbar_title_size</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_short_confirm" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/green_ripple_drawable</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textSize">@dimen/toolbar_title_size</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
+    <style name="button_short_cancel" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_disable_background</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textSize">@dimen/toolbar_title_size</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_small_white">
+        <item name="android:elevation">30dp</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:shadowColor">@color/shadow_color</item>
+        <item name="android:background">@drawable/white_field</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textSize">@dimen/little_text_size</item>
+        <item name="android:letterSpacing">0.13</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_small_green" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/button_green_light</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textSize">@dimen/icon_small_text_size</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_planter" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/background_planter</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textSize">@dimen/icon_small_text_size</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--icon text-->
+
+    <style name="icon_type">
+        <item name="android:drawableLeft">@drawable/ic_house_white</item>
+        <item name="android:background">@drawable/green_button</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:textSize">@dimen/icon_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="icon_purple_type">
+        <item name="android:background">@drawable/purple_background</item>
+        <item name="android:fontFamily">@font/koho_medium</item>
+        <item name="android:textSize">@dimen/icon_small_text_size</item>
+        <item name="android:textColor">@color/purple</item>
+    </style>
+
+    <style name="icon_yellow_type">
+        <item name="android:background">@drawable/yellow_background</item>
+        <item name="android:fontFamily">@font/koho_medium</item>
+        <item name="android:textSize">@dimen/icon_small_text_size</item>
+        <item name="android:textColor">@color/yellow_text_size</item>
+    </style>
+
+    <!--dialog theme-->
+
+    <style name="DialogTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation.Window</item>
+    </style>
+
+    <style name="DialogAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+    <!--tab layout-->
+    <style name="tab_layout">
+        <item name="android:background">@drawable/background_tab_indicator</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/little_text_size</item>
+        <item name="android:fontFamily">@font/koho_bold</item>
+        <item name="android:letterSpacing">0.13</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--switch style-->
+    <style name="switch_style">
+        <item name="android:colorControlActivated">@color/green_active</item>
+    </style>
+
+
+</resources>

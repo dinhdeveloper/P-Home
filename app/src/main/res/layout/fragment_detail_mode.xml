@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ (C) Copyright 2008 STYL Solutions Pte. Ltd. , All rights reserved
+  ~ This source code and any compilation or derivative thereof is the sole
+  ~ property of STYL Solutions Pte. Ltd. and is provided pursuant to a
+  ~ Software License Agreement.  This code is the proprietary information of
+  ~ STYL Solutions Pte. Ltd. and is confidential in nature. Its use and
+  ~ dissemination by any party other than STYL Solutions Pte. Ltd. is strictly
+  ~ limited by the confidential information provisions of the Agreement
+  ~ referenced above.
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/text_margin_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background_edittext"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin_top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_icon_planter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_planter" />
+
+                <TextView
+                    style="@style/title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_padding_horizontal"
+                    android:layout_toEndOf="@+id/iv_icon_planter"
+                    android:text="@string/planter_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/crop" />
+
+                    <TextView
+                        style="@style/body_regular_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/planter_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/process" />
+
+                    <TextView
+                        style="@style/body_regular_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harvest_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/title_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipe" />
+
+                <TextView
+                    style="@style/body_regular_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipe_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_device_margin_top"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/item_image_margin_right"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_switch"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/water_padding_horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_fan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_fan_small" />
+
+                    <TextView
+                        android:id="@+id/tv_fan"
+                        style="@style/body_bold_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fan_text_margin"
+                        android:layout_toEndOf="@+id/iv_fan"
+                        android:text="@string/fan" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_fan"
+                        android:src="@drawable/ic_action"
+                        android:theme="@style/switch_style" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/item_image_margin_right"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_switch"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/water_padding_horizontal">
+
+                    <ImageView
+                        android:id="@+id/ic_r_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/r_b_light_small" />
+
+                    <TextView
+                        android:id="@+id/tv_red_light"
+                        style="@style/body_bold_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fan_text_margin"
+                        android:layout_toEndOf="@+id/ic_r_light"
+                        android:text="@string/rb_light" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_red_light"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_action"
+                        android:theme="@style/switch_style" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_switch"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/water_padding_horizontal">
+
+                    <ImageView
+                        android:id="@+id/ic_w_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/w_light_small" />
+
+                    <TextView
+                        android:id="@+id/tv_white_light"
+                        style="@style/body_bold_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fan_text_margin"
+                        android:layout_toEndOf="@+id/ic_w_light"
+                        android:text="@string/white_light" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_white_light"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_action"
+                        android:theme="@style/switch_style" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/text_margin_top">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_gallery" />
+
+                <TextView
+                    style="@style/title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_padding_horizontal"
+                    android:layout_toEndOf="@+id/iv_image"
+                    android:text="@string/photo_gallery" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_image" />
+
+                <ImageView
+                    android:layout_width="@dimen/item_image_size"
+                    android:layout_height="@dimen/item_image_size"
+                    android:layout_weight="1"
+                    android:src="@drawable/image_more" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/text_device_margin_top"
+            android:background="@drawable/background_edittext"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin_top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_icon_planter_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_planter" />
+
+                <TextView
+                    style="@style/title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_padding_horizontal"
+                    android:layout_toEndOf="@+id/iv_icon_planter_2"
+                    android:text="@string/planter_2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/crop" />
+
+                    <TextView
+                        style="@style/body_regular_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/planter_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/process" />
+
+                    <TextView
+                        style="@style/body_regular_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/harvest_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/title_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipe" />
+
+                <TextView
+                    style="@style/body_regular_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipe_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_device_margin_top"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/item_image_margin_right"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_switch"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/water_padding_horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_fan_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_fan_small" />
+
+                    <TextView
+                        android:id="@+id/tv_fan_2"
+                        style="@style/body_bold_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fan_text_margin"
+                        android:layout_toEndOf="@+id/iv_fan_2"
+                        android:text="@string/fan" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_fan_2"
+                        android:src="@drawable/ic_action"
+                        android:theme="@style/switch_style" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/item_image_margin_right"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_switch"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/water_padding_horizontal">
+
+                    <ImageView
+                        android:id="@+id/ic_r_light_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/r_b_light_small" />
+
+                    <TextView
+                        android:id="@+id/tv_red_light_2"
+                        style="@style/body_bold_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fan_text_margin"
+                        android:layout_toEndOf="@+id/ic_r_light_2"
+                        android:text="@string/rb_light" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_red_light_2"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_action"
+                        android:theme="@style/switch_style" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_switch"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/water_padding_horizontal">
+
+                    <ImageView
+                        android:id="@+id/ic_w_light_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/w_light_small" />
+
+                    <TextView
+                        android:id="@+id/tv_white_light_2"
+                        style="@style/body_bold_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/fan_text_margin"
+                        android:layout_toEndOf="@+id/ic_w_light_2"
+                        android:text="@string/white_light" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_white_light_2"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_action"
+                        android:theme="@style/switch_style" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/text_margin_top">
+
+                <ImageView
+                    android:id="@+id/iv_image_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_gallery" />
+
+                <TextView
+                    style="@style/title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/input_padding_horizontal"
+                    android:layout_toEndOf="@+id/iv_image_2"
+                    android:text="@string/photo_gallery" />
+
+                <Button
+                    style="@style/button_small_green"
+                    android:layout_width="@dimen/button_create_width"
+                    android:layout_height="@dimen/button_create_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/create" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tree_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_image" />
+
+                <ImageView
+                    android:layout_width="@dimen/item_image_size"
+                    android:layout_height="@dimen/item_image_size"
+                    android:layout_weight="1"
+                    android:src="@drawable/image_more" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_device_margin_top"
+            android:layout_marginBottom="@dimen/detail_item_margin_bottom"
+            android:background="@drawable/background_edittext"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin_top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_icon_planter_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_planter" />
+
+                <TextView
+                    style="@style/title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_padding_horizontal"
+                    android:layout_toEndOf="@+id/iv_icon_planter_3"
+                    android:text="@string/planter_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action" />
+            </RelativeLayout>
+
+            <Button
+                style="@style/button_small_white"
+                android:layout_width="@dimen/button_small_white_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:text="@string/add_crop" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

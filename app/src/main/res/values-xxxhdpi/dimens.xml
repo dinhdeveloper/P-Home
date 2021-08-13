@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--sign up-->
+    <dimen name="sign_up_top">50dp</dimen>
+    <dimen name="sign_up_button_spacing">42dp</dimen>
+    <dimen name="sign_up_button_bottom">32dp</dimen>
+    <dimen name="sign_up_field_spacing">22dp</dimen>
+    <dimen name="sign_up_bottom_spacing">54dp</dimen>
+</resources>

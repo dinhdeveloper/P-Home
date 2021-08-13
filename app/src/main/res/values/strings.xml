@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">P-Home</string>
+    <string name="ok">OK</string>
+    <string name="cannot_connect_server">Unable to connect to server. Please try again later.</string>
+    <string name="powered_by">Powered By:</string>
+    <string name="pfsap">PFSAP</string>
+
+    <!-- fonts -->
+    <string name="koho_bold">fonts/koho_bold.ttf</string>
+    <string name="koho_bold_italic">fonts/koho_bold_italic.ttf</string>
+    <string name="koho_extra_light">fonts/koho_extra_light.ttf</string>
+    <string name="koHo_extra_light_italic">fonts/koHo_extra_light_italic.ttf</string>
+    <string name="koho_italic">fonts/koho_italic.ttf</string>
+    <string name="koHo_light">fonts/koHo_light.ttf</string>
+    <string name="koho_light_italic">fonts/koho_light_italic.ttf</string>
+    <string name="koho_medium">fonts/koho_medium.ttf</string>
+    <string name="koho_medium_italic">fonts/koho_medium_italic.ttf</string>
+    <string name="koho_regular">fonts/koho_regular.ttf</string>
+    <string name="koho_semi_bold">fonts/koho_semi_bold.ttf</string>
+    <string name="koho_semi_bold_italic">fonts/koho_semi_bold_italic.ttf</string>
+    <string name="sign_up_next">Continue</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_user_with_non_account">Don\'t have an account?</string>
+    <string name="already_have_account">Have an account?</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="log_in">LOG IN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_password">New Password</string>
+    <string name="account_description">User Name/Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="user_name">User Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="verify_count_down_format">%ds</string>
+
+    <!--verification-->
+    <string name="verification_code">Verification Code</string>
+    <string name="pls_type_verification_code">Please type the verification code sent to your\nEmail Address</string>
+    <string name="otp_not_received">Didn\'t receive your OTP?</string>
+    <string name="Resent"><u>Resend</u></string>
+
+    <!--forgot-->
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_description">Enter your email below to receive your\nverification code.</string>
+
+    <string name="welcome">WELCOME!</string>
+    <string name="welcome_title">My P-Home</string>
+    <string name="add_phome_description">Please add P-Home to start planting\nyour crop</string>
+    <string name="add_first_phome">ADD MY FIRST P-HOME</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--instruction-->
+    <string name="add_p_home">Add P-Home</string>
+    <string name="instruction_text">Please complete setup device by plug in all planters to Technical Unit before scan QR code.</string>
+    <string name="start_to_scan">Start to scan</string>
+
+    <!--scan-->
+    <string name="scan_text">Please scan QR code on device</string>
+    <string name="or">Or</string>
+    <string name="input_series_number">Input Series Number</string>
+    <string name="go">Go</string>
+
+    <!--setup wifi-->
+    <string name="device_found">Device Found</string>
+    <string name="device_hardcode">P-Home-01-vc01</string>
+    <string name="device_text">Please set your Wifi address to device</string>
+    <string name="your_wifi_name">Your Wifi Name</string>
+    <string name="name">Name</string>
+    <string name="wifi_password">Password</string>
+    <string name="note">Note:</string>
+    <string name="note_text">Please provide your WIFI IF and Password to connect your P-Home to</string>
+    <string name="allow_to_connect">Allow to connect</string>
+    <string name="start_dot">*</string>
+
+    <!--registration-->
+    <string name="p_home_name_hardcode">P-Home 1</string>
+    <string name="day_hardcode">Tuesday 15/03/2021</string>
+    <string name="registration_in_process">Registration in progress…</string>
+    <string name="please_notice_light">Please Notice the Light Status on the device to know your device has failed or completed the registration.</string>
+    <string name="wifi_setup">WIFI set up</string>
+
+    <!--dialog-->
+    <string name="p_home_name">PHome Name</string>
+    <string name="skip">Skip</string>
+    <string name="save">Save</string>
+
+    <!--machine mode-->
+    <string name="planter_1">Planter 1</string>
+    <string name="planter_2">Planter 2</string>
+    <string name="add_crop">Add crop</string>
+    <string name="time_day">01/07/2020 23:36:44</string>
+    <string name="temp">E-12357</string>
+    <string name="temp_speed">0 µS/cm</string>
+    <string name="water">F-9390</string>
+    <string name="water_speed">0FF</string>
+    <string name="planter_name">Xiao Bai Cai</string>
+    <string name="harvest_content">(10 days to harvest)</string>
+
+    <!--my home-->
+    <string name="machine_mode">Machine mode</string>
+    <string name="detail_mode">Detail mode</string>
+
+    <!--detail mode-->
+    <string name="crop">Crop</string>
+    <string name="process">Process</string>
+    <string name="recipe">Recipe</string>
+    <string name="recipe_content">Lorem ipsum dolor sit amet - P02</string>
+    <string name="fan">Fan</string>
+    <string name="rb_light">RB -Light</string>
+    <string name="white_light">W -Light</string>
+    <string name="photo_gallery">Photo Gallery</string>
+    <string name="photo_gallery_empty">Gallery is empty. Create schedule to take picture</string>
+    <string name="create">Create</string>
+
+
+
+
+
+
+
+
+
+</resources>

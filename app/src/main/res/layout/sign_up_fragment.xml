@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ (C) Copyright 2008 STYL Solutions Pte. Ltd. , All rights reserved
+  ~ This source code and any compilation or derivative thereof is the sole
+  ~ property of STYL Solutions Pte. Ltd. and is provided pursuant to a
+  ~ Software License Agreement.  This code is the proprietary information of
+  ~ STYL Solutions Pte. Ltd. and is confidential in nature. Its use and
+  ~ dissemination by any party other than STYL Solutions Pte. Ltd. is strictly
+  ~ limited by the confidential information provisions of the Agreement
+  ~ referenced above.
+  -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/screen_horizontal_spacing"
+        android:paddingEnd="@dimen/screen_horizontal_spacing">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="79dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="@dimen/sign_up_top"
+            android:contentDescription="@null"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/llUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.styl.phome.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:text="@string/user_name"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/small_text_size"
+                app:customFont="@string/koho_medium" />
+
+            <ImageView
+                android:layout_width="@dimen/ic_required_width"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_required" />
+        </LinearLayout>
+
+        <com.styl.phome.customview.CustomEditText
+            android:id="@+id/edtAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:background="@drawable/white_field"
+            android:gravity="center_vertical|start"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingHorizontal="18dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/content_text_size"
+            app:customFont="@string/koho_bold"
+            tools:text="Name" />
+
+        <LinearLayout
+            android:id="@+id/llEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sign_up_field_spacing"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.styl.phome.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:text="@string/email_address"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/small_text_size"
+                app:customFont="@string/koho_medium" />
+
+            <ImageView
+                android:layout_width="@dimen/ic_required_width"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_required" />
+        </LinearLayout>
+
+        <com.styl.phome.customview.CustomEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:background="@drawable/white_field"
+            android:gravity="center_vertical|start"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:paddingHorizontal="18dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/content_text_size"
+            app:customFont="@string/koho_bold"
+            tools:text="Email" />
+
+        <LinearLayout
+            android:id="@+id/llPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sign_up_field_spacing"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.styl.phome.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:text="@string/password"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/small_text_size"
+                app:customFont="@string/koho_medium" />
+
+            <ImageView
+                android:layout_width="@dimen/ic_required_width"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_required" />
+        </LinearLayout>
+
+        <com.styl.phome.customview.CustomEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:background="@drawable/white_field"
+            android:gravity="center_vertical|start"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:paddingHorizontal="18dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/content_text_size"
+            app:customFont="@string/koho_bold"
+            tools:text="*******" />
+
+        <LinearLayout
+            android:id="@+id/llConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sign_up_field_spacing"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.styl.phome.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:text="@string/confirm_password"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/small_text_size"
+                app:customFont="@string/koho_medium" />
+
+            <ImageView
+                android:layout_width="@dimen/ic_required_width"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_required" />
+        </LinearLayout>
+
+        <com.styl.phome.customview.CustomEditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:background="@drawable/white_field"
+            android:gravity="center_vertical|start"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:paddingHorizontal="18dp"
+            android:textColor="@color/green"
+            android:textSize="@dimen/content_text_size"
+            app:customFont="@string/koho_bold"
+            tools:text="*******" />
+
+
+        <com.styl.phome.customview.CustomButton
+            android:id="@+id/btnContinue"
+            style="@style/GreenButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sign_up_button_spacing"
+            android:layout_marginBottom="@dimen/sign_up_button_bottom"
+            android:letterSpacing="0.16"
+            android:text="@string/sign_up_next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/content_text_size"
+            app:customFont="@string/koho_bold" />
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sign_up_bottom_spacing"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.styl.phome.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_account"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/medium_text_size"
+                app:customFont="@string/koho_medium" />
+
+            <com.styl.phome.customview.CustomTextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_spacing"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sign_in"
+                android:textColor="@color/green"
+                android:textSize="@dimen/medium_text_size"
+                app:customFont="@string/koho_bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
